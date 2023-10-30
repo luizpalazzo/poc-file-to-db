@@ -50,7 +50,7 @@ public class Extraction {
         writer.append("HEADER"+System.lineSeparator());
 
         for (Row row : rows) {
-            System.out.println("User " + row.getLong(0) + " " + row.getString(1));
+            System.out.println("Register found " + row.getLong(0) + " " + row.getString(1));
 
             writer.append(String.valueOf(row.getLong(0)));
             writer.append(addSpaces("file.fields.param0.size"));
